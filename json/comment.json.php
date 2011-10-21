@@ -7,10 +7,10 @@ session_start();
 $fake_email = array('example.com', 'localhost.com', 'fake.com', 'example.net', 'localhost.net', 'fake.net');
 $response = array('sucessful' => false);
 if (isset($_GET['sesskey']) && ($_GET['sesskey'] == $_SESSION['sesskey'])) {
-    $poll = isset($_GET['poll']) : $_GET['poll'] ? null;
-    $email = isset($_GET['email']) : $_GET['email'] ? null;
-    $name = isset($_GET['name']) : $_GET['name'] ? null;
-    $comment = isset($_GET['comment']) : $_GET['comment'] ? null;
+    $poll = isset($_GET['poll']) ? $_GET['poll'] : null;
+    $email = isset($_GET['email']) ? $_GET['email'] : null;
+    $name = isset($_GET['name']) ? $_GET['name'] : null;
+    $comment = isset($_GET['comment']) ? $_GET['comment'] : null;
 
     if (!empty($poll) && !empty($email) && !empty($name) && !empty($comment)) {
         $db = new db();

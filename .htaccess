@@ -1,0 +1,3 @@
+<Files "gen_password.php">
+    Deny from all
+</Files>
