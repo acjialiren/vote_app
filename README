@@ -1,0 +1,7 @@
+This is a small polling system.
+
+Written in PHP, with MYSQL database used to store polls etc.
+Has a json api for processing votes, adding comment, generating session keys.
+
+Written By: Christopher Tombleson
+GPL V3
